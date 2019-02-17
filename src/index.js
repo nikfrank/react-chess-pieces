@@ -3,7 +3,7 @@ import React from 'react';
 export default ({ piece='p' })=> {
   const pieceColor = piece.toUpperCase() === piece ? 'white' : 'black';
 
-  return ( <svg viewBox="0 0 270 90">
+  return ( <svg viewBox="0 0 45 45">
     {
       piece === 'K' ? (
         <g style={{
@@ -380,5 +380,5 @@ export default ({ piece='p' })=> {
         </g>
       ) : null
     }
-  </svg>
+  </svg>)
 };
