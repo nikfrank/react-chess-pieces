@@ -1,0 +1,62 @@
+{
+  "name": "react-chess-pieces",
+  "version": "1.0.0",
+  "description": "svg chess pieces",
+  "scripts": {
+    "test": "jest",
+    "build": "babel -d dist/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikfrank/react-chess-pieces.git"
+  },
+  "keywords": [
+    "react",
+    "chess",
+    "svg"
+  ],
+  "author": "nik frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikfrank/react-chess-pieces/issues"
+  },
+  "homepage": "https://github.com/nikfrank/react-chess-pieces#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "es2016",
+      "react"
+    ],
+    "plugins": [
+      "babel-plugin-syntax-trailing-function-commas",
+      "babel-plugin-transform-class-properties",
+      "babel-plugin-transform-object-rest-spread",
+      "babel-plugin-transform-react-constant-elements"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-plugin-syntax-trailing-function-commas": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-react-constant-elements": "^6.9.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jest": "^21.2.1",
+    "react-dom": "16",
+    "react-test-renderer": "16"
+  },
+  "dependencies": {
+    "react": "^16.0.0"
+  },
+  "jest": {
+    "testRegex": "tests/",
+    "setupFiles": [
+      "<rootDir>/test-boot.js"
+    ]
+  }
+}
