@@ -45,10 +45,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className='Board'>
-          {this.state.pieces.map((colOfPieces, rowIndex)=> (
-            <div className='Row'>
-              {colOfPieces.map( (piece, colIndex)=> (
-                <div className='Square'>
+          {this.state.pieces.map((rowOfPieces, rowIndex)=> (
+            <div key={rowIndex+'row'} className='Row'>
+              {rowOfPieces.map( (piece, colIndex)=> (
+                <div key={rowIndex+'row'+colIndex+'col'} className='Square'>
                   <Piece piece={piece}/>
                 </div>
               ))}
@@ -61,12 +61,12 @@ class App extends Component {
 }
 
 export default App;
-
 ```
 
 
 the Piece Component renders into an unstyled svg, so you should be able to style it however you please
 
+this example is missing all the CSS - if you want to learn how to build a chessboard in react checkout my [workshop here](https://github.com/nikfrank/chess-workshop)
 
 
 original sprite svg:
