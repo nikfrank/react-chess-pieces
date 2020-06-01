@@ -66,6 +66,8 @@ export default App;
 
 the Piece Component renders into an unstyled svg, so you should be able to style it however you please
 
+all svg are available by direct import as well (but they are named case sensitively, sorry not sorry to windows people)
+
 this example is missing all the CSS - if you want to learn how to build a chessboard in react checkout my [workshop here](https://github.com/nikfrank/chess-workshop)
 
 
