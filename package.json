@@ -1,10 +1,10 @@
 {
   "name": "react-chess-pieces",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "svg chess pieces",
   "scripts": {
     "test": "jest",
-    "build": "babel -d dist/ src/"
+    "build": "babel -d dist/ src/ && cp ./src/*.svg ./dist/"
   },
   "repository": {
     "type": "git",
